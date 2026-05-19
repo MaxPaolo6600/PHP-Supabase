@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
+.header_opcao a{
+    text-decoration: none;
+    color: #000000;
+}
+main{
+    height: 60vh;
+}
+footer{
+    height: 20vh;
+}
