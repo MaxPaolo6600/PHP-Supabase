@@ -1,19 +1,302 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
 }
-header{
+
+:root {
+    --font-color: #FFF;
+    --main: #161616;
+    --azul1: #2483ff;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: var(--main);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(255, 133, 133, 0.25) 0px 54px 55px, rgba(255, 133, 133, 0.12) 0px -12px 30px, rgba(255, 133, 133, 0.12) 0px 4px 6px, rgba(255, 133, 133, 0.17) 0px 12px 13px, rgba(255, 133, 133, 0.09) 0px -3px 5px;
+}
+
+main section .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section .cardInfo {
+    border: 2px solid var(--azul1);
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+main .cardListaInfos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main section .cardInfo .cardText1 {
+    color: var(--font-color);
+}
+
+main section .cardInfo .cardText2 {
+    color: var(--font-color);
+}
+
+main section .tabela {
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    background-color: var(--main);
+}
+
+.logo {
+    width: 8rem;
+}
+
+header {
+    display: flex;
+    background-color: var(--main);
+}
+
+header .nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header .navTab {
+    display: flex;
+    background-color: rgba(10, 10, 10, 0.5);
+    border-radius: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+header .navTab a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+header .navTab a:hover {
+    background-color: rgba(10, 150, 250, 0.25);
+    transform: scale(1.10);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+header .navTab a .textNav {
+    color: var(--font-color);
+}
+
+section {
+    padding: 2% 15% 2% 15%;
+}
+
+section .titulo {
+    color: var(--font-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+section h4 {
+    color: var(--font-color);
+}
+
+section li {
+    color: var(--font-color);
+    margin: 1rem;
+}
+
+section .card1 {
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
-    height: 20vh;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    margin-top: 1rem;
 }
-.header_opcao a{
+
+section .card1 a {
     text-decoration: none;
-    color: #000000;
+    color: black;
+    background-color: var(--font-color);
+    border-radius: 0.5rem;
+    width: 25%;
+    text-align: center;
+    padding: 0.75rem;
+    border: 3px solid var(--azul1);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-main{
-    height: 60vh;
+
+section .card1 a:hover {
+    background-color: #2980b9;
+    transform: scale(1.10);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-footer{
-    height: 20vh;
+
+section .card1 a:focus {
+    outline: 2px solid var(--font-color);
+    outline-offset: 2px;
+}
+
+section .card1 .cardImg {
+    display: flex;
+    align-items: center;
+}
+
+section .card1 .cardImg h4 {
+    color: var(--font-color);
+    padding-left: 2rem;
+    font-size: 3rem;
+}
+
+section .card1 .cardImg .imgRally {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.bg_b {
+    background-image: url("../img/img1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.bg_b section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5% 10% 5% 10%;
+}
+
+.bg_b section h3 {
+    color: var(--font-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.bg_wrc {
+    background-image: url("../img/img2.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.bg_wrc section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5% 10% 5% 10%;
+}
+
+.bg_wrc section h3 {
+    color: var(--font-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.bg_1 {
+    background-image: url("../img/img3.png");
+    flex: 1;
+    background-repeat: no-repeat;
+}
+
+.bg_1 section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5% 10% 5% 10%;
+}
+
+.bg_1 section h3 {
+    color: var(--font-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main);
+    box-shadow: rgba(10, 150, 250, 0.25) 0px 20px 20px -12px inset;
+    color: var(--font-color);
+    padding-top: 1rem;
+}
+
+footer .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+footer .form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .inputFooter {
+    padding: 0.25rem;
+    border-radius: 0.50rem;
+    height: 3rem;
+    background-color: var(--main);
+    border: 1px solid var(--azul1);
+    color: var(--font-color);
+    margin-left: 1rem;
+}
+
+footer .btnFooter {
+    color: black;
+    background-color: var(--font-color);
+    border-radius: 0.5rem;
+    width: 25%;
+    text-align: center;
+    padding: 0.75rem;
+    border: 3px solid var(--azul1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+span {
+    background: linear-gradient(to right, rgb(255, 133, 133), var(--azul1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    border: 1px solid var(--azul1);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0 1rem 0 1rem;
+    color: var(--font-color);
+}
+
+.card p {
+    color: gray;
+    font-size: 1rem;
+}
+
+section .comentarioText {
+    color: var(--font-color);
 }

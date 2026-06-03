@@ -1,51 +1,43 @@
 <?php
-
-include("./assets/data/data.php");
-
+include_once("");
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max´s Store</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-    <header>
-        <div class="header_opcao">
-            <a href="#">opcao1</a>
-            <a href="#">opcao1</a>
-            <a href="#">opcao1</a>
+<main>
+    <section>
+        <h2 class="titulo">O Rally é uma modalidade de automobilismo em que pilotos e
+            navegadores competem percorrendo trechos
+            cronometrados em estradas abertas ou fechadas, muitas vezes em terrenos difíceis como<span> terra, lama,
+                neve ou cascalho</span>
+        </h2>
+    </section>
+    <section>
+        <h4>
+            Link da fonte ultilizada: <span><a href="https://fonts.google.com/specimen/Orbitron">Aqui</a></span>
+        </h4>
+        <div class="card1">
+            <div class="cardImg">
+                <img src="./assets/img/img1.jpg" alt="grupoB" class="imgRally">
+                <h4>Grupo B Rally</h4>
+            </div>
+            <a href="./pages/grupoB.php">Ver mais</a>
         </div>
-        <div class="header_nome">
-            <h3>Max´s Store</h3>
+        <div class="card1">
+            <div class="cardImg">
+                <img src="./assets/img/img2.png" alt="wrc" class="imgRally">
+                <h4>WRC Rally</h4>
+            </div>
+            <a href="./pages/wrc.php">Ver mais</a>
         </div>
-    </header>
-    <main>
-        <section>
-            <form method="POST">
-                <input type="text" id="numero" name="numero" require>
-                <button type="submit">Enviar numero</button>
-            </form>
-            <?php
-                $num = 0;
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $num = $_POST["numero"];
-                }
-                for ($i = 1; $i <= 10; $i++) {
-                        $res = $i * $num;
-                        echo "$num X $i = $res";
-                        echo "</br>";
-                    }
-                ?>
-        </section>
-    </main>
-    <footer>
+        <div class="card1">
+            <div class="cardImg">
+                <img src="./assets/img/img3.png" alt="rally1" class="imgRally">
+                <h4>Grupo 1 Rally</h4>
+            </div>
+            <a href="./pages/rally1.php">Ver mais</a>
+        </div>
+    </section>
+</main>
 
-    </footer>
-</body>
-
-</html>
+<?php
+include("./assets/components/Footer.php")
+?>

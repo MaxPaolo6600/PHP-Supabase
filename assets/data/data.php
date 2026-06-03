@@ -15,4 +15,6 @@ $options = [
 $context = stream_context_create($options);
 $response = file_get_contents($url, false, $context);
 $data = json_decode($response, true);
+
+define('BASE_URL', 'http://localhost:8000/');
 ?>
