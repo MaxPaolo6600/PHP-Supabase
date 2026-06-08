@@ -1,5 +1,5 @@
 <?php 
-include("../data/data.php");
+include_once("./assets/data/data.php");
 ?>
 
 <!DOCTYPE html>
@@ -22,16 +22,16 @@ include("../data/data.php");
                 <a href="<?= BASE_URL ?>index.php">
                     <h4 class="textNav">Home</h4>
                 </a>
-                <a href="<?= BASE_URL ?>assets/pages/grupoB.php">
+                <a href="<?= BASE_URL ?>grupoB.php">
                     <h4 class="textNav">GrupoB</h4>
                 </a>
-                <a href="<?= BASE_URL ?>assets/pages/wrc.php">
+                <a href="<?= BASE_URL ?>wrc.php">
                     <h4 class="textNav">WRC</h4>
                 </a>
-                <a href="<?= BASE_URL ?>assets/pages/rally1.php">
+                <a href="<?= BASE_URL ?>rally1.php">
                     <h4 class="textNav">Grupo 1</h4>
                 </a>
-                <a href="<?= BASE_URL ?>assets/pages/comentarios.php">
+                <a href="<?= BASE_URL ?>comentarios.php">
                     <h4 class="textNav">Comentários</h4>
                 </a>
             </div>

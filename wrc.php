@@ -1,5 +1,5 @@
 <?php
-include_once("../components/Header.php");
+include_once("./assets/components/Header.php");
 ?>
 
 <main class="bg_wrc">
@@ -63,5 +63,5 @@ include_once("../components/Header.php");
 </main>
 
 <?php
-include_once("../components/Footer.php");
+include_once("./assets/components/Footer.php");
 ?>

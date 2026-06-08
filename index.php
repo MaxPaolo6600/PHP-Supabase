@@ -1,5 +1,5 @@
 <?php
-include_once("");
+include_once("./assets/components/Header.php");
 ?>
 
 <main>
@@ -19,21 +19,21 @@ include_once("");
                 <img src="./assets/img/img1.jpg" alt="grupoB" class="imgRally">
                 <h4>Grupo B Rally</h4>
             </div>
-            <a href="./pages/grupoB.php">Ver mais</a>
+            <a href="<?= BASE_URL ?>grupoB.php">Ver mais</a>
         </div>
         <div class="card1">
             <div class="cardImg">
                 <img src="./assets/img/img2.png" alt="wrc" class="imgRally">
                 <h4>WRC Rally</h4>
             </div>
-            <a href="./pages/wrc.php">Ver mais</a>
+            <a href="<?= BASE_URL ?>wrc.php">Ver mais</a>
         </div>
         <div class="card1">
             <div class="cardImg">
                 <img src="./assets/img/img3.png" alt="rally1" class="imgRally">
                 <h4>Grupo 1 Rally</h4>
             </div>
-            <a href="./pages/rally1.php">Ver mais</a>
+            <a href="<?= BASE_URL ?>rally1.php">Ver mais</a>
         </div>
     </section>
 </main>
