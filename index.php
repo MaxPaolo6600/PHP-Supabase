@@ -35,6 +35,7 @@ include_once("./assets/components/Header.php");
             </div>
             <a href="<?= BASE_URL ?>rally1.php">Ver mais</a>
         </div>
+        <form action="<?= BASE_URL ?>assets/data/post.php"></form>
     </section>
 </main>
 

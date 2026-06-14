@@ -2,11 +2,11 @@
     <h2>© Max Paolo Ltda.</h2>
     <div class="form1">
         <h4>Algum comentário sobre o site? Envie aqui:</h4>
-        <div class="form">
-            <textarea class="inputFooter" id="texto" type="text" placeholder="Comentário"></textarea>
-            <input class="inputFooter" id="email" type="email" placeholder="E-mail">
-        </div>
-        <button class="btnFooter" type="button" onclick="enviar()">Enviar</button>
+        <form action="<?= BASE_URL ?>php/post.php" method="POST">
+            <textarea class="inputFooter" type="text" placeholder="Comentário" name="mensagem"></textarea>
+            <input class="inputFooter" type="email" placeholder="E-mail" name="email">
+            <button class="btnFooter" type="submit">Enviar</button>
+        </form>
     </div>
 </footer>
 </body>

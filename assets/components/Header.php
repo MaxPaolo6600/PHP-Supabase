@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
 include_once("./assets/data/data.php");
 ?>
 
@@ -34,6 +35,18 @@ include_once("./assets/data/data.php");
                 <a href="<?= BASE_URL ?>comentarios.php">
                     <h4 class="textNav">Comentários</h4>
                 </a>
+                <?php if (isset($_SESSION["usuario"])): ?>
+                    <h4 class="textNavName">
+                        <?= htmlspecialchars($_SESSION["usuario"]["nome"]) ?>
+                    </h4>
+                    <a href="<?= BASE_URL ?>php/logout.php" class="aSair">
+                        <h4 class="textNavSair">Sair</h4>
+                    </a>
+                <?php else: ?>
+                    <a href="<?= BASE_URL ?>cadastro.php">
+                        <h4 class="textNav">Cadastrar</h4>
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
     </header>
